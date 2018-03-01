@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <link href="style.css" rel="stylesheet">
+    <title>Creative Project 3</title>
+  </header>
+
+  <body>
+    <div id="app">
+      <p>{{ question }}</p>
+      <input v-model="picked" type="radio" name="choices" value="1">{{one}}<br>
+      <input v-model="picked" type="radio" name="choices" value="2">{{two}}<br>
+      <input v-model="picked" type="radio" name="choices" value="3">{{three}}<br>
+      <input v-model="picked" type="radio" name="choices" value="4">{{four}}<br>
+      <button v-on:click="submit">Submit</button>
+      <br>
+      <button v-on:click="getquestion">New Question</button>
+      <p>Score: {{ score }}</p>
+    </div>
+
+    <div id="footer">
+      <a href="https://github.com/GraysonBennion/creativeproject3">GitHub</a>
+    </div>
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="script.js"></script>
+  
+</html>
